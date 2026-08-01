@@ -1,0 +1,28 @@
+# Composer dependencies
+/vendor/
+
+# Runtime and generated files
+/logs/*
+/uploads/qrcodes/*.png
+/uploads/qrcodes/*.jpg
+/uploads/qrcodes/*.jpeg
+/uploads/qrcodes/*.gif
+/uploads/qrcodes/*.webp
+
+# Local environment files
+.env
+.env.*
+*.local
+.claude
+config.php
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary and cache files
+*.log
+*.tmp
+*.cache
+*.swp
