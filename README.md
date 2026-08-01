@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <a href="#-demo-video">🎥 Demo</a> •
+  <a href="https://youtu.be/96mca95k4Sw">🎥 Demo</a> •
   <a href="#-features">✨ Features</a> •
   <a href="#-screenshots">📸 Screenshots</a> •
   <a href="#-installation">⚙️ Installation</a> •
@@ -46,8 +46,9 @@ The system is built with a strong focus on:
 # 🎥 Demo Video
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID">
-    <img src="https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg" alt="Marathon Live Registration Platform Demo" width="800">
+  <a href="https://youtu.be/96mca95k4Sw">
+    <img width="1901" height="1079" alt="Screenshot 2026-08-02 005032" src="https://github.com/user-attachments/assets/a982b604-daad-476e-9496-70f8042d8fc8" />
+
   </a>
 </p>
 
@@ -366,7 +367,7 @@ Security is a core part of the application architecture.
 ## 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/marathon-live-registration.git
+git clone https://github.com/subham-paul/Velocity_Marathon_Event_Registration_System
 ```
 
 Navigate to the project:
@@ -484,7 +485,7 @@ The payment module can operate in local/development simulation mode.
 ## 🏠 Landing Page
 
 <p align="center">
-  <img src="docs/screenshots/home.png" width="90%" alt="Marathon Landing Page">
+  <img width="1901" height="1079" alt="image" src="https://github.com/user-attachments/assets/535d91ec-74b2-4263-8527-f3268efe2d7d" />
 </p>
 
 ---
@@ -492,7 +493,8 @@ The payment module can operate in local/development simulation mode.
 ## 📝 Registration Form
 
 <p align="center">
-  <img src="docs/screenshots/registration.png" width="90%" alt="Registration Form">
+  <img width="1896" height="1079" alt="image" src="https://github.com/user-attachments/assets/1f8ba611-b1f2-4d38-9764-646695d1ac6d" />
+
 </p>
 
 ---
@@ -500,44 +502,13 @@ The payment module can operate in local/development simulation mode.
 ## 📧 OTP Verification
 
 <p align="center">
-  <img src="docs/screenshots/otp-verification.png" width="90%" alt="OTP Verification">
+  <img width="934" height="641" alt="image" src="https://github.com/user-attachments/assets/241b82a3-9d9f-473b-860b-923fac0e8a44" />
+
 </p>
 
 ---
 
-## 💳 Payment Page
 
-<p align="center">
-  <img src="docs/screenshots/payment.png" width="90%" alt="Razorpay Payment">
-</p>
-
----
-
-## 📊 Admin Dashboard
-
-<p align="center">
-  <img src="docs/screenshots/dashboard.png" width="90%" alt="Admin Dashboard">
-</p>
-
----
-
-## 📷 QR Scanner
-
-<p align="center">
-  <img src="docs/screenshots/qr-scanner.png" width="90%" alt="QR Scanner">
-</p>
-
-> Replace the screenshot paths with your actual project screenshots.
-
----
-
-# 🎞️ Animated Preview
-
-You can add an animated GIF demonstration to your README:
-
-<p align="center">
-  <img src="docs/demo/marathon-demo.gif" width="90%" alt="Animated Project Demo">
-</p>
 
 Recommended GIF flow:
 
