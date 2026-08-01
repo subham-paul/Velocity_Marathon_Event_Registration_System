@@ -1,0 +1,5 @@
+# Only images may be served from here; PHP execution is blocked.
+<FilesMatch "\.(?!png$|jpg$|jpeg$|gif$|webp$)[^.]+$">
+    Require all denied
+</FilesMatch>
+php_flag engine off

@@ -1,0 +1,321 @@
+/* =====================================================
+   Velocity Marathon 2026 — dark theme
+   ===================================================== */
+:root {
+  --bg: #0b0f14;
+  --bg-alt: #10161d;
+  --card: #141c25;
+  --border: #223041;
+  --accent: #f97316;
+  --accent-hover: #fb8c3c;
+  --text-dim: #8fa3b8;
+}
+
+* { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: #e6edf3;
+  font-family: 'Inter', system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+.text-accent { color: var(--accent) !important; }
+.text-secondary { color: var(--text-dim) !important; }
+
+/* ---------- Buttons ---------- */
+.btn-accent {
+  background: var(--accent);
+  border: none;
+  color: #0b0f14;
+  font-weight: 700;
+  transition: all .2s ease;
+}
+.btn-accent:hover, .btn-accent:focus {
+  background: var(--accent-hover);
+  color: #0b0f14;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(249, 115, 22, .35);
+}
+.btn-outline-accent {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+  transition: all .2s ease;
+}
+.btn-outline-accent:hover { background: var(--accent); color: #0b0f14; }
+
+/* ---------- Navbar ---------- */
+#mainNav {
+  padding: 14px 0;
+  transition: background .3s ease, box-shadow .3s ease;
+}
+#mainNav.scrolled {
+  background: rgba(11, 15, 20, .92);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, .5);
+  padding: 10px 0;
+}
+.navbar-brand {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+}
+.nav-link { color: #cfd9e4; font-weight: 500; }
+.nav-link:hover { color: var(--accent); }
+
+/* ---------- Hero ---------- */
+.hero {
+  min-height: 100vh;
+  padding: 130px 0 80px;
+  position: relative;
+  background:
+    radial-gradient(ellipse 60% 45% at 75% 20%, rgba(249, 115, 22, .14), transparent),
+    radial-gradient(ellipse 50% 40% at 15% 85%, rgba(30, 90, 160, .18), transparent),
+    var(--bg);
+}
+.hero-glow {
+  position: absolute; inset: 0;
+  background-image: linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, #000, transparent);
+  pointer-events: none;
+}
+.badge-pill {
+  display: inline-block;
+  border: 1px solid var(--border);
+  background: rgba(20, 28, 37, .8);
+  color: var(--text-dim);
+  border-radius: 100px;
+  padding: 8px 18px;
+  font-size: .85rem;
+}
+.hero-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3.2rem, 9vw, 6.5rem);
+  line-height: .95;
+  letter-spacing: 2px;
+}
+.stroke-text {
+  color: transparent;
+  -webkit-text-stroke: 2px #e6edf3;
+}
+.hero-emoji {
+  font-size: 11rem;
+  filter: drop-shadow(0 0 60px rgba(249, 115, 22, .45));
+  animation: float 4s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-18px); }
+}
+
+/* ---------- Countdown ---------- */
+.count-box {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 20px;
+  text-align: center;
+  min-width: 86px;
+}
+.count-box span {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.2rem;
+  color: var(--accent);
+  display: block;
+  line-height: 1;
+}
+.count-box small { color: var(--text-dim); font-size: .72rem; text-transform: uppercase; letter-spacing: 1px; }
+
+/* ---------- Stats strip ---------- */
+.stats-strip {
+  background: linear-gradient(90deg, rgba(249,115,22,.12), rgba(249,115,22,.04));
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.stat-num { font-family: 'Bebas Neue', sans-serif; font-size: 2.6rem; color: var(--accent); margin: 0; }
+.stat-label { color: var(--text-dim); font-size: .85rem; margin: 0; text-transform: uppercase; letter-spacing: 1px; }
+
+/* ---------- Sections ---------- */
+.section { padding: 96px 0; }
+.section-alt { background: var(--bg-alt); }
+.section-tag {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: .8rem;
+  letter-spacing: 3px;
+}
+.section-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  letter-spacing: 1.5px;
+  margin-top: 6px;
+}
+
+/* ---------- About ---------- */
+.feature-box {
+  display: flex; gap: 14px; align-items: flex-start;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  height: 100%;
+}
+.feature-box i { color: var(--accent); font-size: 1.4rem; }
+.feature-box small { display: block; color: var(--text-dim); }
+.about-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 36px;
+}
+.perk-list { list-style: none; padding: 0; margin: 0; }
+.perk-list li { padding: 10px 0; border-bottom: 1px dashed var(--border); }
+.perk-list li:last-child { border-bottom: 0; }
+.perk-list i { color: #3fb950; margin-right: 10px; }
+
+/* ---------- Category cards ---------- */
+.cat-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 28px;
+  height: 100%;
+  position: relative;
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+.cat-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, .45);
+}
+.cat-card.featured { border-color: var(--accent); }
+.cat-flag {
+  position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+  background: var(--accent); color: #0b0f14;
+  font-size: .68rem; font-weight: 800; letter-spacing: 1px;
+  border-radius: 100px; padding: 4px 14px; white-space: nowrap;
+}
+.cat-dist {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.4rem;
+  color: var(--accent);
+  line-height: 1;
+}
+.cat-price {
+  font-size: 1.5rem; font-weight: 800; color: #fff;
+  margin: 10px 0 14px;
+}
+
+/* ---------- Timeline ---------- */
+.timeline { position: relative; padding-left: 30px; }
+.timeline::before {
+  content: ''; position: absolute; left: 9px; top: 8px; bottom: 8px;
+  width: 2px; background: var(--border);
+}
+.tl-item { position: relative; display: flex; gap: 24px; padding: 18px 0; }
+.tl-item::before {
+  content: ''; position: absolute; left: -27px; top: 26px;
+  width: 14px; height: 14px; border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px rgba(249, 115, 22, .2);
+}
+.tl-time {
+  min-width: 92px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.3rem;
+  color: var(--accent);
+  letter-spacing: 1px;
+}
+.tl-body p { color: var(--text-dim); font-size: .9rem; margin: 4px 0 0; }
+
+/* ---------- FAQ ---------- */
+.accordion-item { background: var(--card); border: 1px solid var(--border) !important; margin-bottom: 10px; border-radius: 12px !important; overflow: hidden; }
+.accordion-button { background: var(--card); color: #e6edf3; font-weight: 600; box-shadow: none !important; }
+.accordion-button:not(.collapsed) { background: var(--card); color: var(--accent); }
+.accordion-body { color: var(--text-dim); }
+
+/* ---------- Registration form ---------- */
+.reg-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: clamp(24px, 4vw, 48px);
+}
+.form-section-title {
+  color: var(--accent);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: .82rem;
+  font-weight: 700;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 10px;
+  margin-bottom: 6px;
+}
+.form-control, .form-select {
+  background: var(--bg);
+  border-color: var(--border);
+  color: #e6edf3;
+  padding: 10px 14px;
+}
+.form-control:focus, .form-select:focus {
+  background: var(--bg);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 .2rem rgba(249, 115, 22, .18);
+  color: #fff;
+}
+.form-label { font-size: .88rem; color: #cfd9e4; }
+.form-check-input:checked { background-color: var(--accent); border-color: var(--accent); }
+
+/* ---------- OTP modal ---------- */
+.modal-content {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+}
+.otp-digit {
+  width: 52px; height: 60px;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+@media (max-width: 420px) {
+  .otp-digit { width: 42px; height: 52px; font-size: 1.3rem; }
+}
+
+/* ---------- Success modal ---------- */
+.success-check {
+  width: 72px; height: 72px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: rgba(63, 185, 80, .15);
+  border: 2px solid #3fb950;
+  color: #3fb950;
+  font-size: 2.2rem;
+  display: flex; align-items: center; justify-content: center;
+}
+.reg-id-box {
+  background: var(--bg);
+  border: 1px dashed var(--accent);
+  border-radius: 12px;
+  padding: 14px;
+}
+.reg-id {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  color: var(--accent);
+  letter-spacing: 4px;
+}
+.success-qr {
+  width: 190px; height: 190px;
+  border-radius: 12px;
+  border: 6px solid #fff;
+  background: #fff;
+}
+
+/* ---------- Footer ---------- */
+.footer { background: #070a0e; border-top: 1px solid var(--border); }
+.footer-links a { color: var(--text-dim); text-decoration: none; display: block; padding: 4px 0; }
+.footer-links a:hover { color: var(--accent); }
