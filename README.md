@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <a href="https://youtu.be/VpcF6gMCeiU?si=yMGbNQRkw_4S6TtA">🎥 Demo</a> •
+  <a href="https://drive.google.com/file/d/1f765s1AcxeH7mL1IzfiOCEktF4ok8Rqk/view?usp=drive_link">🎥 Demo</a> •
   <a href="#-features">✨ Features</a> •
   <a href="#-screenshots">📸 Screenshots</a> •
   <a href="#-installation">⚙️ Installation</a> •
@@ -46,7 +46,7 @@ The system is built with a strong focus on:
 # 🎥 Demo Video
 
 <p align="center">
-  <a href="https://youtu.be/VpcF6gMCeiU?si=yMGbNQRkw_4S6TtA">
+  <a href="https://drive.google.com/file/d/1f765s1AcxeH7mL1IzfiOCEktF4ok8Rqk/view?usp=drive_link">
     <img width="1901" height="1079" alt="Screenshot 2026-08-02 005032" src="https://github.com/user-attachments/assets/a982b604-daad-476e-9496-70f8042d8fc8" />
 
   </a>
