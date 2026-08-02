@@ -671,7 +671,7 @@ This project is licensed under the **MIT License**.
 # 👨‍💻 Developer
 
 <p align="center">
-  Developed with ❤️ using PHP, MySQL, Bootstrap, Razorpay, and modern web technologies.
+  Developed with Subham Paul using PHP, MySQL, Bootstrap, Razorpay, and modern web technologies.
 </p>
 
 <p align="center">
